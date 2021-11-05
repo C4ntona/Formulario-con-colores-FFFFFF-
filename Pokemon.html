@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<HTML>
+	<head>
+		<style>
+			label { 
+				color:#FF0000;
+				 }
+			input {
+				color:#0000FF;
+			}
+			.botonshito{
+				color: #00FF00;
+			}
+		</style>
+			<title>Formulario</title>
+	</head>
+	
+		<body>
+			<form method="POST" action="http://formadorestic.com/alumnosasir2/procesaformulario_usuario.php">
+			<table border>
+				<tr>
+					<th colspan="2">User Form</th>
+				</tr>
+				<tr>
+					<td><label for="name">Enter Name</label></td>
+					<td><input type="text" id="name" name="nombre"></td>
+				</tr>
+				<tr>
+					<td><label for="pass">Enter Password</label></td>
+					<td><input type="password" id="pass" name="password"></td>
+				</tr>
+				<tr>
+					<td><label for="address">Enter Address</label></td>
+					<td><textarea id="address" name="direccion"></textarea></td>
+				</tr>
+				<tr>
+					<td>Select Game</td>
+					<td>
+						<input type="checkbox" id="hooc" value="hoockey" name="deportes[]">
+						<label for="hooc">Hoockey</label><br>
+						
+						<input type="checkbox" id="foot" value="football" name="deportes[]">
+						<label for="foot">Football</label><br>
+						
+						<input type="checkbox" id="bad" value="badminton" name="deportes[]">
+						<label for="bad">Badminton</label><br>
+						
+						<input type="checkbox" id="cri" value="cricket" name="deportes[]">
+						<label for="cri">Cricket</label><br>
+						
+						<input type="checkbox" id="boll" value="bolleyball" name="deportes[]">
+						<label for="boll">Bolleyball</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td><input type="radio" name="sexo" id="gen" value="Male">
+						<label for="gen">Male</label>
+						<input type="radio" id="female" name="sexo" value="Female">
+						<label for="female">Female</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="age">Select ur age</td></label>
+					<td><select id="age" name="edad">
+							<option value="0" selected>Select</option>
+							<option value="20">20 years</option>
+							<option value="21">21 years</option>
+							<option value="22">22 years</option>
+							<option value="+22">More than 22 years</option></select></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="file" name="archivo"></td>
+				</tr>
+				<tr>
+
+					<td colspan="2" align="center">
+						<input type="button" value="Click me">
+						<input type="reset" value="Refresh">
+						<input class="botonshito" type="submit" value="Submit Form">
+					</td>
+				</tr>
+			</table>
+			</form>
+		</body>
+
+</HTML>
